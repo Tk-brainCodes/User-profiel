@@ -1,6 +1,6 @@
 {
   "name": "user-profile",
-  "proxy": "http://api.enye.tech/v1/challenge/records",
+  "proxy": "http://api.enye.tech/v1/challenge", 
   "version": "0.1.0",
   "private": true,
   "dependencies": {
