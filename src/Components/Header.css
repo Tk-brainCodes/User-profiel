@@ -1,0 +1,15 @@
+.Header__{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 70px;
+    background: white;
+    padding: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.svg {
+    color:  #4a4e4d;
+}
