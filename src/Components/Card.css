@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Tajawal&display=swap');
+
+.Card__component {
+    display: inline-flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    width: 280px;
+    height: 250px;
+    background:white;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border-radius: 4px;
+}
+
+.inner__component {
+    display: block;
+    background:  #ffeead ;
+    width: 290px;
+    height: 240px;
+    border-radius: 6px;
+    padding: 3px;
+    box-shadow: -3px 18px 50px -29px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -3px 18px 50px -29px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 18px 50px -29px rgba(0,0,0,0.75);
+}
+
+.names__ {
+    font-style: normal;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    color: #0e9aa7;
+    padding: 2px;
+    margin-top: 5px;
+    margin-bottom: 4px;
+}
+
+p {
+   margin-bottom: 2px;
+   margin-left: 2px;
+   font-family: 'Tajawal', sans-serif;
+   color: #4a4e4d ;
+   font-weight: bolder;
+}
+
+b {
+    font-size: 12px;
+    background-color: #e4ca61 ;
+    border-radius: 4px;
+}
