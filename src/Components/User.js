@@ -1,5 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
+import Header from './Header';
 import Patient from "./Patients";
+import './User.css';
 import axios from 'axios';
 
 const User = () => {
@@ -34,19 +36,21 @@ const User = () => {
         fetchUser();
     }, []);//run once
 
-    //test
-    // let USER = Object.values(users);
-    // console.log(USER, "the KEYYYY");
-
-    // USER.map(value => console.log(value[0], "first name"));
+    //Get current post
+    const indexOfLastPost = currentPage * usersPerPage;
+    const indexOfFirstPost = indexOfLastPost - usersPerPage;
+    const currentUser = users.slice(indexOfFirstPost, indexOfLastPost);
 
     return (
-        <div className="User__">
-            <h1>User hello</h1>
-            {/*search user*/}
-            {/*sub header: display filter by age, gender,and payment method*/}
-            {/*Display user by pagination*/}
-            <Patient users={users} loading={loading} />
+        <div className="User__home">
+            <Header />
+            <h1 className="records">Profiles</h1>
+            <div className="user__container">
+                {/*search user*/}
+                {/*sub header: display filter by age, gender,and payment method*/}
+                {/*Display user by pagination*/}
+                <Patient users={currentUser} loading={loading} />
+            </div>
         </div>
     )
 }

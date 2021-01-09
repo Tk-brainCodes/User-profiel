@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans&family=Tajawal&display=swap');
+
+.user__container {
+    margin-top: 20px;
+    width: 100vw;
+    height: auto !important;
+    background: #4a4e4d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.records {
+    padding: 20px;
+    color:  #fe8a71;
+    font-family: 'Tajawal', sans-serif;
+    font-size: normal;
+    letter-spacing: 2px;
+}

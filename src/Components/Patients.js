@@ -16,6 +16,15 @@ const Patients = ({ users, loading }) => {
                         FirstName={user.FirstName}
                         LastName={user.LastName}
                         Gender={user.Gender}
+                        CreditCardNumber={user.CreditCardNumber}
+                        Email={user.Email}
+                        LastLogin={user.LastLogin}
+                        MacAddress={user.MacAddress}
+                        PaymentMethod={user.PaymentMethod}
+                        PhoneNumber={user.PhoneNumber}
+                        URL={user.URL}
+                        UserName={user.UserName}
+
 
                     />
                 )
