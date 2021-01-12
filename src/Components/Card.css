@@ -3,9 +3,10 @@
 
 .Card__component {
     display: inline-flex;
-    padding: 20px;
+    flex-direction: row;
+    align-items: center;
+    padding: 50px;
     flex-wrap: wrap;
-    width: 330px;
     height: 400px;
     background:white;
     margin-bottom: 20px;

@@ -1,4 +1,8 @@
 .App {
     background-color: #4a4e4d;
-    overflow-x: hidden;
+    width: 100vw;
+    height: auto !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

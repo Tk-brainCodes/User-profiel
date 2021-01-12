@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans&family=Tajawal&display=swap');
 
+
+.User__home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: auto !important;
+    flex-wrap: wrap;
+}
+
 .user__container {
     margin-top: 20px;
     width: 100vw;
