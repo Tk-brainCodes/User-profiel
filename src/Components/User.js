@@ -16,7 +16,7 @@ const User = () => {
     const paginate = (pageNumbers) => setCurrentPage(pageNumbers)
 
     //api url
-    const apiURL = `/records`;
+    const apiURL = `https://api.enye.tech/v1/challenge/records`;
 
     //make request
     useEffect(() => {
