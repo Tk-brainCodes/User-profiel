@@ -6,7 +6,7 @@
     padding: 20px;
     flex-wrap: wrap;
     width: 330px;
-    height: 300px;
+    height: 400px;
     background:white;
     margin-bottom: 20px;
     margin-left: 20px;
@@ -17,7 +17,7 @@
     display: block;
     background:  #ffeead ;
     width: 320px;
-    height: 300px;
+    height: 380px;
     border-radius: 6px;
     padding: 5px;
     box-shadow: -3px 18px 50px -29px rgba(0,0,0,0.75);

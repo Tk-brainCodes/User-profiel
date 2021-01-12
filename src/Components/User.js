@@ -47,7 +47,7 @@ const User = () => {
 
     return (
         <div className="User__home">
-            <h1 className="records">Patients</h1>
+            <h1 className="records">Patients <div className="boldness">Records</div></h1>
 
             {/*Display filter by gender and age */}
 

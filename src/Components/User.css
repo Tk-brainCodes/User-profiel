@@ -11,10 +11,16 @@
 }
 
 .records {
+    display: inline-flex;
     padding: 20px;
     color:  #fe8a71;
     font-family: 'Tajawal', sans-serif;
     font-size: 50px;
     letter-spacing: 2px;
     margin-top: 50px;
+}
+
+.boldness {
+    color: #ffeead;
+    margin-left: 20px;
 }

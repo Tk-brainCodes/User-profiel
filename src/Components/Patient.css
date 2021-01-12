@@ -10,7 +10,9 @@
 }
 
 input {
-    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
     padding: 20px;
     border: none;
     font-size: 20px;
@@ -19,7 +21,7 @@ input {
 }
 
 input:focus {
-    width: 400px;
+    width: 730px;
     transition: 0.4s ease-in-out;
 }
 
@@ -50,4 +52,14 @@ h3 {
 .payment__method {
     margin-left: 20px;
     padding: 10px;
+}
+
+.description__ {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #ffeead;
 }

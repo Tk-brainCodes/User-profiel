@@ -2,8 +2,25 @@ import React from 'react';
 import './Card.css';
 
 
-
-const Card = ({ FirstName, LastName, Gender, CreditCardNumber, Email, LastLogin, MacAddress, PaymentMethod, PhoneNumber, URL, UserName }) => {
+const Card = (
+    {
+        FirstName,
+        LastName,
+        Gender,
+        CreditCardNumber,
+        Email,
+        LastLogin,
+        MacAddress,
+        PaymentMethod,
+        PhoneNumber,
+        URL,
+        UserName,
+        DomainName,
+        Latitude,
+        Longitude,
+        CreditCardType
+    }
+) => {
     return (
         <div className="Card__component">
             <div className="inner__component">
@@ -17,6 +34,9 @@ const Card = ({ FirstName, LastName, Gender, CreditCardNumber, Email, LastLogin,
                 <p>PhoneNumber: <b>{PhoneNumber}</b></p>
                 <p>URL: <b>{URL}</b></p>
                 <p>UserName: <b>{UserName}</b></p>
+                <p>Latitude: <b>{Latitude}</b></p>
+                <p>Longitude: <b>{Longitude}</b></p>
+                <p>CreditCardType: <b>{CreditCardType}</b></p>
             </div>
         </div>
     )
