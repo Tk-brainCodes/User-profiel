@@ -8,7 +8,7 @@ const Card = ({ FirstName, LastName, Gender, CreditCardNumber, Email, LastLogin,
         <div className="Card__component">
             <div className="inner__component">
                 <p className="names__">{FirstName} {LastName}</p>
-                <p>Sex: {Gender}</p>
+                <p>Sex: <b>{Gender}</b></p>
                 <p>CreditCardNumber: <b>{CreditCardNumber}</b></p>
                 <p>Email: <b>{Email}</b></p>
                 <p>LastLogin: <b>{LastLogin}</b></p>

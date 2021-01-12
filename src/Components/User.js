@@ -1,18 +1,22 @@
 import React, { useState, useEffect } from 'react';
-import Header from './Header';
 import Patient from "./Patients";
+import Pagination from './Pagination';
 import './User.css';
+import './Header.css';
 import axios from 'axios';
 
 const User = () => {
     const [users, setUser] = useState([]);
     const [loading, setLoading] = useState(false);
     const [currentPage, setCurrentPage] = useState(1); //set the current page to 1
-    const [usersPerPage, setUsersPerPage] = useState(20) //set the number users to be displayed per page
+    const [usersPerPage] = useState(20) //set the number users to be displayed per page
 
+
+    //change page (paginate)
+    const paginate = (pageNumbers) => setCurrentPage(pageNumbers)
 
     //api url
-    const apiURL = "/records";
+    const apiURL = `/records`;
 
     //make request
     useEffect(() => {
@@ -34,7 +38,7 @@ const User = () => {
 
         }
         fetchUser();
-    }, []);//run once
+    }, [apiURL]);//run once
 
     //Get current post
     const indexOfLastPost = currentPage * usersPerPage;
@@ -43,14 +47,20 @@ const User = () => {
 
     return (
         <div className="User__home">
-            <Header />
-            <h1 className="records">Profiles</h1>
+            <h1 className="records">Patients</h1>
+
+            {/*Display filter by gender and age */}
+
             <div className="user__container">
-                {/*search user*/}
-                {/*sub header: display filter by age, gender,and payment method*/}
-                {/*Display user by pagination*/}
                 <Patient users={currentUser} loading={loading} />
             </div>
+
+            <Pagination
+                usersPerPage={usersPerPage}
+                totalUsers={users.length}
+                paginate={paginate}
+            />
+
         </div>
     )
 }

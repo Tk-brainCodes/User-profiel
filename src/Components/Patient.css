@@ -1,0 +1,53 @@
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.search-label {
+    padding: 10px;
+}
+
+input {
+    width: 350px;
+    padding: 20px;
+    border: none;
+    font-size: 20px;
+    color: black;
+    border-radius: 4px;
+}
+
+input:focus {
+    width: 400px;
+    transition: 0.4s ease-in-out;
+}
+
+h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-style: normal;
+    color: white;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: auto !important;
+}
+
+.Gender {
+    padding: 10px;
+}
+
+.payment__method {
+    margin-left: 20px;
+    padding: 10px;
+}

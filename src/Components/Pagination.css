@@ -1,0 +1,32 @@
+.page-item {
+    list-style-type: none;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.pagination-button {
+    padding: 10px;
+    margin-left: 4px;
+    border-radius: 4px;
+    background-color:  #4a4e4d;
+    border: 2px solid #fe8a71;
+    color: #fe8a71;
+    font-size: 16px;
+}
+
+.pag__button {
+    padding: 10px;
+    border: 2px solid #fe8a71;
+    background-color: #4a4e4d;
+    margin-right: 2px;
+}
+
+.page-link {
+    text-decoration: none;
+    color: #fe8a71;
+}
